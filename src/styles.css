@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+body {
+  background: #e8e8e8;
+  font-family: 'Muli';
+}
+div{
+  /*border-bottom: solid black 1px;*/
+  text-align: center;
+  margin: auto 0px;
+  margin-top: 15px;
+}
+h1{
+  font-weight: bold;
+  color: red;
+}
+
