@@ -4,7 +4,7 @@ import { FinderRequestComponent } from './finder-request/finder-request.componen
 import { HomeComponent } from './home/home.component';
 import { LoserRequestComponent } from './loser-request/loser-request.component';
 import { MyItemsComponent } from './my-items/my-items.component';
-import { ProfilComponent } from './profil/profil.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SaveForRequestComponent } from './save-for-request/save-for-request.component';
 import { SearchLocationComponent } from './search-location/search-location.component';
 import { SearchComponent } from './search/search.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'searchLocation', component:SearchLocationComponent  },
   { path: 'search', component:SearchComponent  } ,
   { path: 'sr', component:SaveForRequestComponent  }  ,
-  { path: 'profil', component:ProfilComponent  } ,
+  { path: 'profile', component:ProfileComponent  } ,
   { path: 'viewItems', component:ViewItemsComponent}, 
   { path: 'loserR', component:LoserRequestComponent},      
   { path: 'finderR', component:FinderRequestComponent}, 

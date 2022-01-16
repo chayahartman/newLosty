@@ -10,7 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { SaveForRequestComponent } from './save-for-request/save-for-request.component';
 import { MyItemsComponent } from './my-items/my-items.component';
 import { MyRequestsComponent } from './my-requests/my-requests.component';
-import { ProfilComponent } from './profil/profil.component';
+import { ProfileComponent } from './profile/profile.component';
 import { FinderRequestComponent } from './finder-request/finder-request.component';
 import { LoserRequestComponent } from './loser-request/loser-request.component';
 import { GetCountUsersComponent } from './get-count-users/get-count-users.component';
@@ -33,7 +33,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     SaveForRequestComponent,
     MyItemsComponent,
     MyRequestsComponent,
-    ProfilComponent,
+    ProfileComponent,
     FinderRequestComponent,
     LoserRequestComponent,
     GetCountUsersComponent,
