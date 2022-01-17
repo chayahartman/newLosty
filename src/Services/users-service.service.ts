@@ -8,7 +8,7 @@ export class UsersService {
   result:any;
   getCount(){
     {
-      this._http.get("/api/User").subscribe(res=>{
+      this._http.get("/api/Users").subscribe(res=>{
        debugger
         console.log(res);
         this.result= res;
