@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +21,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DateComponent } from './date/date.component';
+//import { NgxPageScrollModule } from 'ngx-page-scroll-core';
+import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
+
 
 
 @NgModule({
@@ -38,6 +42,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     LoserRequestComponent,
     GetCountUsersComponent,
     NavBarComponent,
+    DateComponent,
+    ScrollBarComponent
 
   ],
   imports: [
@@ -48,7 +54,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatNativeDateModule,
     MatFormFieldModule ,
     MatInputModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    //NgxPageScrollModule
+   
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

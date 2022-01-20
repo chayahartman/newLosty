@@ -10,7 +10,7 @@ export class DateComponent implements OnInit {
 
   constructor() { }
 
- 
+ date:any;
   ngOnInit(): void {
   }
 

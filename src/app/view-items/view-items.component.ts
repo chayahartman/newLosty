@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewItemsComponent implements OnInit {
 
+  names=['fghj','dfghjk','fghjk']
   constructor() { }
 
   ngOnInit(): void {
