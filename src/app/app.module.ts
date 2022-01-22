@@ -24,6 +24,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DateComponent } from './date/date.component';
 //import { NgxPageScrollModule } from 'ngx-page-scroll-core';
 import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
+import { AddItemComponent } from './add-item/add-item.component';
 
 
 
@@ -43,7 +47,11 @@ import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
     GetCountUsersComponent,
     NavBarComponent,
     DateComponent,
-    ScrollBarComponent
+    ScrollBarComponent,
+    SignUpComponent,
+    SignInComponent,
+    PasswordRecoveryComponent,
+    AddItemComponent
 
   ],
   imports: [

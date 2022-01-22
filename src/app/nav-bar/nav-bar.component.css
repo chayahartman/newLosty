@@ -28,3 +28,18 @@ li:hover{
     background-color: #111;
     cursor: grab;
 }
+li.dropdown {
+ 
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}

@@ -20,6 +20,9 @@ const routes: Routes = [
   { path: 'viewItems', component:ViewItemsComponent}, 
   { path: 'loserR', component:LoserRequestComponent},      
   { path: 'finderR', component:FinderRequestComponent}, 
+ /* {path: , component:},
+  {path: , component:},
+  {path: , component:},*/
 ];
 
 @NgModule({
