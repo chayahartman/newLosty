@@ -8,9 +8,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { SaveForRequestComponent } from './save-for-request/save-for-request.component';
 import { SearchLocationComponent } from './search-location/search-location.component';
 import { SearchComponent } from './search/search.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { ViewItemsComponent } from './view-items/view-items.component';
 
 const routes: Routes = [
+  { path: '', component:HomeComponent  },
   { path: 'home', component:HomeComponent  },
   { path: 'myItems', component:MyItemsComponent  },
   { path: 'searchLocation', component:SearchLocationComponent  },
@@ -20,6 +23,8 @@ const routes: Routes = [
   { path: 'viewItems', component:ViewItemsComponent}, 
   { path: 'loserR', component:LoserRequestComponent},      
   { path: 'finderR', component:FinderRequestComponent}, 
+  { path: 'signUp', component:SignUpComponent}, 
+  { path: 'signIn', component:SignInComponent}, 
  /* {path: , component:},
   {path: , component:},
   {path: , component:},*/

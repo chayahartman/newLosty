@@ -28,6 +28,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
 import { AddItemComponent } from './add-item/add-item.component';
+import { ItemsService } from 'src/Services/items.service';
 
 
 
@@ -67,7 +68,7 @@ import { AddItemComponent } from './add-item/add-item.component';
     //NgxPageScrollModule
    
   ],
-  providers: [UsersService],
+  providers: [UsersService,ItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
