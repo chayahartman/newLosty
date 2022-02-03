@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Items } from 'src/app/classes/Items';
+import { Items } from 'src/classes/Items';
 
 
 @Injectable({
@@ -10,16 +10,12 @@ import { Items } from 'src/app/classes/Items';
 export class ItemsService {
 
   constructor(private http:HttpClient) { }
-  url:string="http://localhost:60724/api/Users/";
+  url:string="http://localhost:60724/api/Items/";
 
-  getCountItems():Observable<Array<String>>
+  getItemsList():Observable<Array<Items>>
   {
    
-   return this.http.get<Array<String>>(this.url+"getCountItems");
+   return this.http.get<Array<Items>>(this.url+"getItemsList");
     
-    
-    
-
-
   }
 }
