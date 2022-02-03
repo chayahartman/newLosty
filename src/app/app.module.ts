@@ -29,6 +29,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { ItemsService } from 'src/Services/items.service';
+import { ListComponent } from './list/list.component';
 
 
 
@@ -52,7 +53,8 @@ import { ItemsService } from 'src/Services/items.service';
     SignUpComponent,
     SignInComponent,
     PasswordRecoveryComponent,
-    AddItemComponent
+    AddItemComponent,
+    ListComponent
 
   ],
   imports: [

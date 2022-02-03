@@ -1,0 +1,27 @@
+<h1>טבלת אבידות</h1>
+<table style="border:1px solid black">
+<tr >
+<th>lostId</th>
+<th>userId</th>
+<th>lostName</th>
+<th>itemId</th>
+<th>lostDate</th>
+<th>lostLocation</th>
+<th>lostStatus</th>
+<th>lostDescription</th>
+<th>lostModel</th>
+<th>returnDate</th>
+</tr>
+<tr *ngFor="let lost of lsLosses">
+<td>{{lost.lostId}}</td>
+<td>{{lost.userId}}</td>
+<td>{{lost.lostName}}</td>
+<td>{{lost.itemId}}</td>
+<td>{{lost.lostDate}}</td>
+<td>{{lost.lostLocation}}</td>
+<td>{{lost.lostStatus}}</td>
+<td>{{lost.lostDescription}}</td>
+<td>{{lost.lostModel}}</td>
+<td>{{lost.returnDate}}</td>
+</tr>
+</table>
