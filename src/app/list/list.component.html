@@ -1,4 +1,4 @@
-<h1>טבלת אבידות</h1>
+<!--<h1>טבלת אבידות</h1>
 <table style="border:1px solid black">
 <tr >
 <th>lostId</th>
@@ -23,5 +23,22 @@
 <td>{{lost.lostDescription}}</td>
 <td>{{lost.lostModel}}</td>
 <td>{{lost.returnDate}}</td>
+</tr>
+</table>-->
+<h1>טבלת הגדרות מייל</h1>
+<table style="border:1px solid black">
+<tr >
+<th>EmailSettingsId</th>
+<th>userId</th>
+<th>emailAboutBewRequest</th>
+<th>emailFromAnotherUser</th>
+<th>systemEmailAboutExistsRequest</th>
+</tr>
+<tr *ngFor="let es of lsEs">
+<td>{{es.emailSettingsId}}</td>
+<td>{{es.userId}}</td>
+<td>{{es.emailAboutBewRequest}}</td>
+<td>{{es.emailFromAnotherUser}}</td>
+<td>{{es.systemEmailAboutExistsRequest}}</td>
 </tr>
 </table>
