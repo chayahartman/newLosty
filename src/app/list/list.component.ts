@@ -3,6 +3,8 @@ import { LossesService } from 'src/Services/losses.service';
 import { Losses } from 'src/classes/Losses';
 import { EmailSettings } from 'src/classes/EmailSettings';
 import { EmailSettingsService } from 'src/Services/email-settings.service';
+import { Users } from 'src/classes/Users';
+import { UsersService } from 'src/Services/users-service.service';
 
 @Component({
   selector: 'list',
@@ -12,7 +14,9 @@ import { EmailSettingsService } from 'src/Services/email-settings.service';
 export class ListComponent implements OnInit {
   lsLosses:Array<Losses>=new Array<Losses>();
   lsEs:Array<EmailSettings>=new Array<EmailSettings>();
-  constructor(private LossesService:LossesService,private EsService:EmailSettingsService) { }
+  lsUsers:Array<Users>=new Array<Users>();
+  
+  constructor(private LossesService:LossesService,private EsService:EmailSettingsService,private UsersService:UsersService) { }
 
   ngOnInit() {
 
@@ -20,6 +24,8 @@ export class ListComponent implements OnInit {
    this.LossesService.getLossesList().subscribe(data=>{this.lsLosses=data},err=>{alert('error')});
    this.lsEs=new Array<EmailSettings>();
    this.EsService.getEmailSettingsList().subscribe(data=>{this.lsEs=data},err=>{alert('error')});
+   this.lsUsers=new Array<Users>();
+   this.UsersService.getUsersList().subscribe(data=>{this.lsUsers=data},err=>{alert('error')});
   }
 
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FinderRequestComponent } from './finder-request/finder-request.component';
 import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
 import { LoserRequestComponent } from './loser-request/loser-request.component';
 import { MyItemsComponent } from './my-items/my-items.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'finderR', component:FinderRequestComponent}, 
   { path: 'signUp', component:SignUpComponent}, 
   { path: 'signIn', component:SignInComponent}, 
- /* {path: , component:},
+  {path:'list' , component:ListComponent},
+  /*
   {path: , component:},
   {path: , component:},*/
 ];

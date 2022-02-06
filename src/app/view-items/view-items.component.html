@@ -3,11 +3,22 @@
 <p>מה איבדת /מצאת</p>
 
 <h1>בחר פריט</h1>
-<select>
+<!--<select>
 <option *ngFor="let item of lstr" >
 {{item.itemName}} 
+<button (click)="delete(item.itemId)">מחק</button> 
 </option>
-</select>
+</select>-->
+<ul *ngFor="let item of lstr">
+    <li>
+{{item.itemName}} 
+{{item.itemId}}
+<!--<button (click)="delete(item.itemId)">מחק</button> -->
+</li>
+</ul>
+
+
+
 <br><br>
 <button>הוסף פריט</button>
  <br><br>

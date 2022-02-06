@@ -22,5 +22,10 @@ export class ViewItemsComponent implements OnInit {
    this.itemsService.getItemsList().subscribe(data=>{this.lstr=data},err=>{alert('error')});
    
   }
+delete(itemId:number)
+{
+  this.itemsService.delete(itemId).subscribe(data=>{this.lstr=data},err=>{alert('error')});
+}
+ 
 
 }

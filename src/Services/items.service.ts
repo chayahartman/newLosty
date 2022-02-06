@@ -18,4 +18,9 @@ export class ItemsService {
    return this.http.get<Array<Items>>(this.url+"getItemsList");
     
   }
+
+  delete(itemId:number):Observable<Array<Items>>
+  {
+    return this.http.delete<Array<Items>>(this.url+"DeleteItem/"+itemId);
+  }
 }
