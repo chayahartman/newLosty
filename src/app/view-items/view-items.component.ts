@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Items } from 'src/classes/Items';
 import { ItemsService } from 'src/Services/items.service';
-
+import { NgModule } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-view-items',
@@ -10,7 +11,9 @@ import { ItemsService } from 'src/Services/items.service';
 })
 export class ViewItemsComponent implements OnInit {
 
-  lstr:Array<Items>=new Array<Items>();
+lstr:Array<Items>=new Array<Items>();
+item:Items =new Items(-1);
+
   constructor(private itemsService:ItemsService) { 
   
 }
@@ -25,6 +28,10 @@ export class ViewItemsComponent implements OnInit {
 delete(itemId:number)
 {
   this.itemsService.delete(itemId).subscribe(data=>{this.lstr=data},err=>{alert('error')});
+}
+add()
+{
+  this.itemsService.add(this.item).subscribe(data=>{this.lstr=data},err=>{alert('error')});
 }
  
 

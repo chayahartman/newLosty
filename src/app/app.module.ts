@@ -15,7 +15,7 @@ import { FinderRequestComponent } from './finder-request/finder-request.componen
 import { LoserRequestComponent } from './loser-request/loser-request.component';
 import { GetCountUsersComponent } from './get-count-users/get-count-users.component';
 import {HttpClientModule} from '@angular/common/http';
-import { UsersService } from 'src/Services/users-service.service';
+import { UsersService } from 'src/Services/users.service';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -30,6 +30,7 @@ import { PasswordRecoveryComponent } from './password-recovery/password-recovery
 import { AddItemComponent } from './add-item/add-item.component';
 import { ItemsService } from 'src/Services/items.service';
 import { ListComponent } from './list/list.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -68,6 +69,7 @@ import { ListComponent } from './list/list.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     //NgxPageScrollModule
+    FormsModule
    
   ],
   providers: [UsersService,ItemsService],

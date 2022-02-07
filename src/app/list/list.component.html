@@ -43,7 +43,7 @@
 </tr>
 </table> -->
 
-<h1>טבלת משתמשים</h1>
+<!-- <h1>טבלת משתמשים</h1>
 <table style="border:1px solid black">
     <tr>
         <th>userId</th>
@@ -59,4 +59,33 @@
     <td>{{user.UserPassword}}</td>
     <td>{{user.IsManager}}</td>
     </tr>
+</table> -->
+
+
+<h1>טבלת מציאות</h1>
+<table style="border:1px solid black">
+    <tr>
+        <th>FindingId</th>
+        <th>userId</th>
+        <th>FindingName</th>
+        <th>itemId</th>
+        <th>FindingDate</th>
+        <th>FindingLocation</th>
+        <th>FindingStatus</th>
+        <th>FindingDescription</th>
+        <th>FindingModel</th>
+        </tr>
+
+        <tr *ngFor="let find of lsFindings"n>
+            <td>{{find.FindingId}}</td>
+            <td>{{find.userId}}</td>
+            <td>{{find.FindingName}}</td>
+            <td>{{find.itemId}}</td>
+            <td>{{find.FindingDate}}</td>
+            <td>{{find.FindingLocation}}</td>
+            <td>{{find.FindingStatus}}</td>
+            <td>{{find.FindingDescription}}</td>
+            <td>{{find.FindingModel}}</td>
+           
+            </tr>
 </table>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from 'src/Services/users-service.service';
+import { UsersService } from 'src/Services/users.service';
 
 @Component({
   selector: 'app-get-count-users',

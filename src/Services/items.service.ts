@@ -23,4 +23,9 @@ export class ItemsService {
   {
     return this.http.delete<Array<Items>>(this.url+"DeleteItem/"+itemId);
   }
+  
+  add(item:Items):Observable<Array<Items>>
+  {
+    return this.http.put<Array<Items>>(this.url+"AddItem/",item);
+  }
 }
